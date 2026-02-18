@@ -1,3 +1,11 @@
+import { Hero } from "../widgets/Hero/Hero";
+import { PropertyList } from "../widgets/PropertyList/PropertyList";
+
 export function HomePage() {
-  return <div>Home Page</div>;
+  return (
+    <>
+      <Hero />
+      <PropertyList />
+    </>
+  );
 }
