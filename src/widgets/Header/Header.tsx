@@ -101,6 +101,7 @@ export function Header() {
           <button
             onClick={closeMenu}
             className="text-(--light-text) p-2 hover:bg-white/10 rounded-lg"
+            aria-label="close menu"
           >
             <X size={28} />
           </button>

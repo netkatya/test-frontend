@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import { useAppDispatch, useAppSelector } from "../../../shared/hooks/redux";
 import { sendApplication, reset } from "../applicationsSlice";
 import { ModalPortal } from "../../../shared/ui/ModalPortal/ModalPortal";
+import { X } from "lucide-react";
 
 type FormValues = {
   amount: number;
@@ -64,10 +65,10 @@ export function InvestModal({
         >
           <button
             type="button"
-            onClick={onClose}
-            className="absolute top-3 right-3 text-(--grey-text) hover:text-black"
+            className="text-(--light-text) p-2 hover:bg-white/10 rounded-lg"
+            aria-label="close menu"
           >
-            ✕
+            <X size={14} />
           </button>
 
           <h3 className="font-second font-bold text-[24px] text-center">

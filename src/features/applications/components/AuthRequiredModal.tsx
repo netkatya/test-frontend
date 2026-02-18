@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ModalPortal } from "../../../shared/ui/ModalPortal/ModalPortal";
+import { X } from "lucide-react";
 
 export function AuthRequiredModal({ onClose }: { onClose: () => void }) {
   return (
@@ -8,9 +9,10 @@ export function AuthRequiredModal({ onClose }: { onClose: () => void }) {
         <div className="bg-white rounded-2xl p-10 w-[90%] max-w-md text-center relative">
           <button
             onClick={onClose}
-            className="absolute top-3 right-3 text-(--grey-text) hover:text-black"
+            className="text-(--light-text) p-2 hover:bg-white/10 rounded-lg"
+            aria-label="close menu"
           >
-            ✕
+            <X size={14} />
           </button>
 
           <h2 className="text-xl font-bold mb-3">Authorization required</h2>
